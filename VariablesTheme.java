@@ -16,16 +16,17 @@ public class VariablesTheme {
         byte numberOfCores = 2;
         short SSDMemory = 512;
         int HHDMemory = 16000;
-        //У меня почему-то автоматически заменяется маленькая l, в слове long, на большую. Не получается пофиксить даже копипастом
         long videoMemory = 1;
         boolean windows11 = true;
         char favoriteChar = 'X';
         double PI = 3.14;
         float gitVersion = 2.39f;
         
-        System.out.println("\n(1) ВЫВОД ЗНАЧЕНИЙ ПЕРЕМЕННЫХ НА КОНСОЛЬ\n" + "Количество ядер: " + numberOfCores + "\nПамять SSD: " + SSDMemory +
+        System.out.println("\n(1) ВЫВОД ЗНАЧЕНИЙ ПЕРЕМЕННЫХ НА КОНСОЛЬ\n" + "Количество ядер: " + 
+                numberOfCores + "\nПамять SSD: " + SSDMemory +
                 "\nПамять жесткого диска: " + HHDMemory + "\nВидео память: " + videoMemory + 
-                "\nWindows 11: " + windows11 +"\nЛюбимый символ: " + favoriteChar + "\nЧисло ПИ:" + PI +"\nВерсия гит: " + gitVersion);
+                "\nWindows 11: " + windows11 +"\nЛюбимый символ: " + favoriteChar + "\nЧисло ПИ:" + 
+                PI +"\nВерсия гит: " + gitVersion);
     }
 
     public static void priceCalculationWithDiscount() {
@@ -42,7 +43,8 @@ public class VariablesTheme {
     }
 
     public static void outputJAVAword() {
-        System.out.println("\n\n(3) ВЫВОД СЛОВА JAVA В КОНСОЛЬ\n    J    a  v     v  a\n    J   a a  v   v  a a\n J  J  aaaaa  V V  aaaaa\n  JJ  a     a  V  a     a");
+        System.out.println("\n\n(3) ВЫВОД СЛОВА JAVA В КОНСОЛЬ\n    J    a  v     v  a" + 
+                "\n    J   a a  v   v  a a\n J  J  aaaaa  V V  aaaaa\n  JJ  a     a  V  a     a");
     }
 
     public static void outputMinMaxValue() {
@@ -52,9 +54,12 @@ public class VariablesTheme {
         long l = 9_223_372_036_854_775_807L;
 
         System.out.println("\n\n(4) ВЫВОД МИНИМАЛЬНОГО И МАКСИМАЛЬНОГО ЗНАЧЕНИЙ ЦЕЛЫХ ЧИСЛОВЫХ ТИПОВ" + 
-                "\n--Вывод первоначального значения:" + "\nbyte: " + b + "\nshort: " + s + "\nint: " + i + "\nlong: " + l +
-                "\n--Вывод инкрементированного значения:" + "\nbyte: " + ++b + "\nshort: " + ++s + "\nint: " + ++i + "\nlong: " + ++l +
-                "\n--Вывод декрементированного значения:" + "\nbyte: " + --b + "\nshort: " + --s + "\nint: " + --i + "\nlong: " + --l);
+                "\n--Вывод первоначального значения:" + "\nbyte: " + b + "\nshort: " + s + 
+                "\nint: " + i + "\nlong: " + l +
+                "\n--Вывод инкрементированного значения:" + "\nbyte: " + ++b + "\nshort: " + ++s + 
+                "\nint: " + ++i + "\nlong: " + ++l +
+                "\n--Вывод декрементированного значения:" + "\nbyte: " + --b + "\nshort: " + --s + 
+                "\nint: " + --i + "\nlong: " + --l);
     }
     
     public static void permutationVarValues() {
@@ -119,7 +124,8 @@ public class VariablesTheme {
                 "\n   " + rightSlash + "  " + leftSlash + 
                 "\n  " + rightSlash + underline + leftBracket + " " + rightbracket + leftSlash + 
                 "\n " + rightSlash + "      " + leftSlash + 
-                "\n" + rightSlash + underline + underline + underline + underline + rightSlash + leftSlash + underline + underline + leftSlash); 
+                "\n" + rightSlash + underline + underline + underline + underline + rightSlash + 
+                leftSlash + underline + underline + leftSlash); 
     }
 
     public static void outputAmountOfHundredsDecadesUnits() {
