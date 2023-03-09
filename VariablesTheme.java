@@ -16,8 +16,8 @@ public class VariablesTheme {
 
     public static void displayingVarValuesInConsole() {
         byte numOfCores = 2;
-        short SSDMemory = 512;
-        int HHDMemory = 16000;
+        short SsdMemory = 500;
+        int HhdMemory = 1000;
         //У меня почему-то автоматически заменяется маленькая l, в слове long, на большую. Не получается пофиксить даже копипастом
         long videoMemory = 1;
         boolean isWindows11 = true;
