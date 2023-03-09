@@ -20,7 +20,7 @@ public class VariablesTheme {
         int HHDMemory = 16000;
         //У меня почему-то автоматически заменяется маленькая l, в слове long, на большую. Не получается пофиксить даже копипастом
         long videoMemory = 1;
-        boolean windows11 = true;
+        boolean isWindows11 = true;
         char favoriteChar = 'X';
         double PI = 3.14;
         float gitVersion = 2.39f;
