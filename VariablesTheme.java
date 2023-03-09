@@ -138,7 +138,7 @@ public class VariablesTheme {
                 "\nСумма его цифр: " + sumOfnumberbers +
                 "\nПроизведение его цифр: " + productOfnumberbers); 
     }
- 
+
     public static void outputOfTime() {
         int allTimeInSec = 86399;
         int hours = allTimeInSec / 3600;
