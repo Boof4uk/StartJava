@@ -2,73 +2,101 @@ public class VariablesTheme {
 
     public static void main(String[] args) {
         outputVarValuesInConsole();
-        priceCalculationWithDiscount();
+        calculationPriceWithDiscount();
         outputJAVAword();
-        outputMinMaxValue();
+        outputMinMaxValuesWholeNumberTypes();
         permutationVarValues();
         outputSymbolsAndCodes();
         outputDukeInConsole();
-        outputAmountOfHundredsDecadesUnits();
-        outputOfTime();
+        outputAmountHundredsDecadesUnits();
+        outputTime();
     }
 
     public static void outputVarValuesInConsole() {
-        byte numberOfCores = 2;
-        short SSDMemory = 512;
-        int HHDMemory = 16000;
+
+        System.out.println("\n(1) ВЫВОД ЗНАЧЕНИЙ ПЕРЕМЕННЫХ НА КОНСОЛЬ");
+        
+        byte numberCores = 2;
+        short SsdMemory = 512;
+        int HhdMemory = 1000;
         long videoMemory = 1;
         boolean windows11 = true;
-        char favoriteChar = 'X';
-        double PI = 3.14;
-        float gitVersion = 2.39f;
+        char matebookVersion = 'D';
+        double processorFrequency = 2.10;
+        float usableRam = 15.3f;
         
-        System.out.println("\n(1) ВЫВОД ЗНАЧЕНИЙ ПЕРЕМЕННЫХ НА КОНСОЛЬ\n" + "Количество ядер: " + 
-                numberOfCores + "\nПамять SSD: " + SSDMemory +
-                "\nПамять жесткого диска: " + HHDMemory + "\nВидео память: " + videoMemory + 
-                "\nWindows 11: " + windows11 +"\nЛюбимый символ: " + favoriteChar + "\nЧисло ПИ:" + 
-                PI +"\nВерсия гит: " + gitVersion);
+        System.out.println("Количество ядер: " + numberCores + 
+                "\nПамять SSD: " + SsdMemory +
+                "\nПамять жесткого диска: " + HhdMemory + 
+                "\nВидео память: " + videoMemory + 
+                "\nWindows 11: " + windows11 + 
+                "\nВерсия Matebook: " + matebookVersion + 
+                "\nЧастота процессор: " + processorFrequency +
+                "\nИспользуемая оперативная память: " + usableRam);
     }
 
-    public static void priceCalculationWithDiscount() {
+    public static void calculationPriceWithDiscount() {
+
+        System.out.println("\n(2) РАСЧЕТ СТОИМОСТИ ТОВАРА СО СКИДКОЙ");
+        
         int penPrice = 100;
         int bookPrice = 200;
         double discount = 0.11;
-        int sumOfDiscount = (int)((penPrice + bookPrice) * discount);
-        int sumOfItemsOutOfDiscount = penPrice + bookPrice;
-        int sumOfItemsWithDiscount = penPrice + bookPrice - sumOfDiscount;
+        int sumGoods = penPrice + bookPrice;
+        int sumDiscount = (int) ((sumGoods) * discount);
+        int discountPrice = sumGoods - sumDiscount;
 
-        System.out.println("\n\n(2) РАСЧЕТ СТОИМОСТИ ТОВАРА СО СКИДКОЙ" + 
-                "\nСумма товаров без скидки: " + sumOfItemsOutOfDiscount + "\nСумма скидки: " +
-                sumOfDiscount + "\nСумма товаров со скидкой: " + sumOfItemsWithDiscount);
+        System.out.println("Сумма товаров без скидки: " + sumGoods + 
+                "\nСумма скидки: " + sumDiscount + 
+                "\nСумма товаров со скидкой: " + discountPrice);
     }
 
     public static void outputJAVAword() {
-        System.out.println("\n\n(3) ВЫВОД СЛОВА JAVA В КОНСОЛЬ\n    J    a  v     v  a" + 
+
+        System.out.println("\n(3) ВЫВОД СЛОВА JAVA В КОНСОЛЬ");
+        
+        System.out.println("    J    a  v     v  a" + 
                 "\n    J   a a  v   v  a a\n J  J  aaaaa  V V  aaaaa\n  JJ  a     a  V  a     a");
     }
 
-    public static void outputMinMaxValue() {
-        byte b = 127;
-        short s = 32767;
-        int i = 2_147_483_647;
-        long l = 9_223_372_036_854_775_807L;
+    public static void outputMinMaxValuesWholeNumberTypes() {
 
-        System.out.println("\n\n(4) ВЫВОД МИНИМАЛЬНОГО И МАКСИМАЛЬНОГО ЗНАЧЕНИЙ ЦЕЛЫХ ЧИСЛОВЫХ ТИПОВ" + 
-                "\n--Вывод первоначального значения:" + "\nbyte: " + b + "\nshort: " + s + 
-                "\nint: " + i + "\nlong: " + l +
-                "\n--Вывод инкрементированного значения:" + "\nbyte: " + ++b + "\nshort: " + ++s + 
-                "\nint: " + ++i + "\nlong: " + ++l +
-                "\n--Вывод декрементированного значения:" + "\nbyte: " + --b + "\nshort: " + --s + 
-                "\nint: " + --i + "\nlong: " + --l);
+        System.out.println("\n(4) ВЫВОД МИНИМАЛЬНОГО И МАКСИМАЛЬНОГО ЗНАЧЕНИЙ ЦЕЛЫХ ЧИСЛОВЫХ ТИПОВ");
+
+        byte maxByte = 127;
+
+        System.out.println("--Вывод первоначального значения для byte: " + maxByte +
+                "\n--Вывод после инкремента: " + ++maxByte +
+                "\n-- Вывод после декремента: " + --maxByte);
+
+        short maxShort = 32767;
+
+        System.out.println("--Вывод первоначального значения для short: " + maxShort +
+                "\n--Вывод после инкремента: " + ++maxShort +
+                "\n-- Вывод после декремента: " + --maxShort);
+
+        int maxInt = 2_147_483_647;
+
+        System.out.println("--Вывод первоначального значения для int: " + maxInt +
+                "\n--Вывод после инкремента: " + ++maxInt +
+                "\n-- Вывод после декремента: " + --maxInt);
+
+        long maxLong = 9_223_372_036_854_775_807L;
+
+        System.out.println("--Вывод первоначального значения для long: " + maxLong +
+                "\n--Вывод после инкремента: " + ++maxLong +
+                "\n-- Вывод после декремента: " + --maxLong);
     }
     
     public static void permutationVarValues() {
+
+        System.out.println("\n(5) ПЕРЕСТАНОВКА ЗНАЧЕНИЙ ПЕРЕМЕННЫХ");
+
         int number2 = 2;
         int number5 = 5;
         int swapVar;
 
-        System.out.println("\n\n(5) ПЕРЕСТАНОВКА ЗНАЧЕНИЙ ПЕРЕМЕННЫХ "  + 
-                "\n--C помощью третьей переменной: " + 
+        System.out.println("--C помощью третьей переменной: " + 
                 "\nИсходные значения: " + "number 2 = " + number2 + "; number 5 = " + number5);
 
         swapVar = number2; // = 2
@@ -98,14 +126,16 @@ public class VariablesTheme {
     }
 
     public static void outputSymbolsAndCodes() {
+
+        System.out.println("\n(6) ВЫВОД СИМВОЛОВ И ИХ КОДОВ");
+
         char char35 = 35;
         char char38 = 38;
         char char64 = 64;
         char char94 = 94;
         char char95 = 95;
 
-        System.out.println("\n\n(6) ВЫВОД СИМВОЛОВ И ИХ КОДОВ" + 
-                "\nКод символа: 35; Символ: "+ char35 +
+        System.out.println("Код символа: 35; Символ: "+ char35 +
                 "\nКод символа: 38; Символ: "+ char38 +
                 "\nКод символа: 64; Символ: "+ char64 +
                 "\nКод символа: 94; Символ: "+ char94 +
@@ -113,14 +143,16 @@ public class VariablesTheme {
     }
 
     public static void outputDukeInConsole() {
+
+        System.out.println("\n(7) ВЫВОД В КОНСОЛЬ ASCII-АРТ ДЮКА");
+
         char rightSlash = '/';
         char leftSlash = '\\';
         char leftBracket = '(';
         char rightbracket = ')';
         char underline = '_';
 
-        System.out.println("\n\n(7) ВЫВОД В КОНСОЛЬ ASCII-АРТ ДЮКА" + 
-                "\n    " + rightSlash + leftSlash + 
+        System.out.println("    " + rightSlash + leftSlash + 
                 "\n   " + rightSlash + "  " + leftSlash + 
                 "\n  " + rightSlash + underline + leftBracket + " " + rightbracket + leftSlash + 
                 "\n " + rightSlash + "      " + leftSlash + 
@@ -128,30 +160,34 @@ public class VariablesTheme {
                 leftSlash + underline + underline + leftSlash); 
     }
 
-    public static void outputAmountOfHundredsDecadesUnits() {
-        int numberber = 123;
-        int amountOfHundreds = numberber / 100;
-        int amounOfDecades = numberber % 100 / 10;
-        int amountOfUnits = numberber % 100 % 10;
-        int sumOfnumberbers = amountOfHundreds + amounOfDecades + amountOfUnits;
-        int productOfnumberbers = amountOfHundreds * amounOfDecades * amountOfUnits;
+    public static void outputAmountHundredsDecadesUnits() {
 
-        System.out.println("\n\n(8) ВЫВОД КОЛИЧЕСТВА СОТЕН, ДЕСЯТКОВ И ЕДИНИЦ\n" + 
-                "Число " + numberber + " содержит:\n" +
-                amountOfHundreds + " сотен\n" +
-                amounOfDecades + " десятков\n" +
-                amountOfUnits + " единиц" +
-                "\nСумма его цифр: " + sumOfnumberbers +
-                "\nПроизведение его цифр: " + productOfnumberbers); 
+        System.out.println("\n(8) ВЫВОД КОЛИЧЕСТВА СОТЕН, ДЕСЯТКОВ И ЕДИНИЦ");
+        
+        int numberber = 123;
+        int amountHundreds = numberber / 100;
+        int amounDecades = numberber % 100 / 10;
+        int amountUnits = numberber % 100 % 10;
+        int sumnumberbers = amountHundreds + amounDecades + amountUnits;
+        int productnumberbers = amountHundreds * amounDecades * amountUnits;
+
+        System.out.println("Число " + numberber + " содержит:\n" +
+                amountHundreds + " сотен\n" +
+                amounDecades + " десятков\n" +
+                amountUnits + " единиц" +
+                "\nСумма его цифр: " + sumnumberbers +
+                "\nПроизведение его цифр: " + productnumberbers); 
     }
 
-    public static void outputOfTime() {
+    public static void outputTime() {
+
+        System.out.println("\n(9) ВЫВОД ВРЕМЕНИ");
+
         int allTimeInSec = 86399;
         int hours = allTimeInSec / 3600;
         int minutes = (allTimeInSec - hours * 3600) / 60;
         int seconds = allTimeInSec - (hours * 3600 + minutes * 60);
 
-        System.out.println("\n\n(9) ВЫВОД ВРЕМЕНИ\n" +
-                hours + " : " + minutes + " : " + seconds); 
+        System.out.println(hours + " : " + minutes + " : " + seconds); 
     }
 }
